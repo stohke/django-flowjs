@@ -13,7 +13,7 @@ class UploadView(View):
     def dispatch(self, request, *args, **kwargs):
         # get flow variables
         self.flowChunkNumber = int(request.REQUEST.get('flowChunkNumber'))
-        self.flowChunckSize = int(request.REQUEST.get('flowChunkSize'))
+        self.flowChunkSize = int(request.REQUEST.get('flowChunkSize'))
         self.flowCurrentChunkSize = int(request.REQUEST.get('flowCurrentChunkSize'))
         self.flowTotalSize = int(request.REQUEST.get('flowTotalSize'))
         self.flowIdentifier = request.REQUEST.get('flowIdentifier')
